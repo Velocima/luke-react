@@ -27,7 +27,7 @@ export class App extends React.Component {
                     <div className={this.state.navBarState ? "line-3 line-3-clicked" : "line-3"}></div>
                 </div>
                 <NavBar showNav={this.state.navBarState}/>
-                <Landing />
+                <Landing showNav={this.state.navBarState}/>
             </div>
         )
     }

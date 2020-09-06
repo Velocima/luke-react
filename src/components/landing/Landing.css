@@ -6,6 +6,7 @@
 }
 .landing-container .left, .landing-container .right {
   height: 100%;
+  transition: all 1s;
 }
 .landing-container .left {
   width: 70%;
@@ -43,4 +44,17 @@
   width: 618px;
   object-fit: cover;
   object-position: right;
+  transition: all 0.5s ease-out;
+}
+
+.right-closed {
+  width: 0 !important;
+}
+
+.left-open {
+  width: 100% !important;
+}
+
+.scale-down {
+  opacity: 0;
 }

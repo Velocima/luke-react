@@ -11,6 +11,7 @@ $color-4: #fecea8;
 
     .left, .right {
         height: 100%;
+        transition: all 1s;
     }
 
     .left {
@@ -51,6 +52,19 @@ $color-4: #fecea8;
             width: 618px;
             object-fit: cover;
             object-position: right;
+            transition: all 0.5s ease-out;
         }
     }
+}
+
+.right-closed {
+    width: 0 !important;
+}
+
+.left-open {
+    width: 100% !important;
+}
+
+.scale-down {
+    opacity: 0;
 }
