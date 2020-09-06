@@ -5,10 +5,10 @@ export class Landing extends React.Component {
         return (
             <div className="landing-container">
                 <div className={this.props.showNav ? "left left-open" : "left"}>
-                    <div className="text-container">
+                    <div className="overflow-container">
                         <h1>Luke Hartley</h1>
                     </div>
-                    <div className="text-container">
+                    <div className="overflow-container">
                         <h3>Drummer, Educator</h3>
                     </div>
                 </div>

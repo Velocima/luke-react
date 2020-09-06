@@ -32,4 +32,3 @@ export class App extends React.Component {
         )
     }
 }
-// src={require('../pictures/bg.png')}
