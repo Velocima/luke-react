@@ -15,7 +15,6 @@ export class App extends React.Component {
 
     handleBurgerClick() {
         this.setState({navBarState: !this.state.navBarState})
-        console.log(this.state.navBarState)
     }
 
 
@@ -23,11 +22,11 @@ export class App extends React.Component {
         return (
             <div className='app'>
                 <div className="burger" onClick={this.handleBurgerClick}>
-                    <div className="line1"></div>
-                    <div className="line2"></div>
-                    <div className="line3"></div>
+                    <div className={this.state.navBarState ? "line-1 line-1-clicked" : "line-1"}></div>
+                    <div className={this.state.navBarState ? "line-2 line-2-clicked" : "line-2"}></div>
+                    <div className={this.state.navBarState ? "line-3 line-3-clicked" : "line-3"}></div>
                 </div>
-                {this.state.navBarState ? <NavBar /> : null}
+                <NavBar showNav={this.state.navBarState}/>
                 <Landing />
             </div>
         )

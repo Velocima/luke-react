@@ -4,7 +4,7 @@ import './NavigationBar.css';
 export class NavBar extends React.Component {
     render () {
         return (
-            <nav>
+            <nav className={this.props.showNav ? "active" : ""}>
                 <h3>Bio</h3>
                 <h3>Projects</h3>
                 <h3>Teaching</h3>

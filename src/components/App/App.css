@@ -1,18 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+.app {
+  overflow-x: hidden;
+}
 .app .burger {
+  padding: 15px;
+  border-radius: 5px;
   z-index: 500;
   position: fixed;
   top: 50px;
   right: 50px;
   display: flex;
   flex-direction: column;
+  transition: all 0.7s;
 }
-.app .burger .line1, .app .burger .line2, .app .burger .line3 {
+.app .burger .line-1, .app .burger .line-2, .app .burger .line-3 {
   background-color: #fecea8;
   border-radius: 2px;
   height: 4px;
   width: 30px;
+  transition: all 1s;
 }
-.app .burger .line1, .app .burger .line2 {
+.app .burger .line-1, .app .burger .line-2 {
   margin-bottom: 5px;
+}
+.app .burger:hover {
+  background-color: #ff847c;
+}
+
+.line-1-clicked {
+  transform: rotate(-360deg);
+}
+
+.line-2-clicked {
+  transform: rotate(360deg);
+}
+
+.line-3-clicked {
+  transform: rotate(-360deg);
 }

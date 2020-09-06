@@ -6,21 +6,39 @@ $color-3: #ff847c;
 $color-4: #fecea8;
 
 .app {
+    overflow-x: hidden;
     .burger {
+        padding: 15px;
+        border-radius: 5px;
         z-index: 500;
         position: fixed;
         top: 50px;
         right: 50px;
         display: flex;
         flex-direction: column;
-        .line1, .line2, .line3 {
+        transition: all 0.7s;
+        .line-1, .line-2, .line-3 {
             background-color: $color-4;
             border-radius: 2px;
             height: 4px;
             width: 30px;
+            transition: all 1s;
         }
-        .line1, .line2 {
+        .line-1, .line-2 {
             margin-bottom: 5px;
         }
     }
+    .burger:hover {
+        background-color: $color-3;
+    } 
+}
+
+.line-1-clicked {
+    transform: rotate(-360deg);
+}
+.line-2-clicked {
+    transform: rotate(360deg);
+}
+.line-3-clicked {
+    transform: rotate(-360deg);
 }

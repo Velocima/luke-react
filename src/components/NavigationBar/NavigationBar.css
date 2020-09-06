@@ -9,9 +9,17 @@ nav {
   width: 50vw;
   height: 100vh;
   background-color: #e84a5f;
+  transform: translateX(50vw);
+  opacity: 0;
+  transition: all 1s ease-out;
 }
 nav h3 {
   color: #fecea8;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+}
+
+.active {
+  transform: translateX(0);
+  opacity: 1;
 }
