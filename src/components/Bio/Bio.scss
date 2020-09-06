@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+$color-1: #2a363b;
+$color-2: #e84a5f;
+$color-3: #ff847c;
+$color-4: #fecea8;
+
+
+.bio-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-1;
+    display: flex;
+    align-items: flex-end;
+}

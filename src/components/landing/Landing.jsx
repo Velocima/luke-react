@@ -1,5 +1,6 @@
 import React from 'react';
 import './Landing.css'
+
 export class Landing extends React.Component {
     render () {
         return (
