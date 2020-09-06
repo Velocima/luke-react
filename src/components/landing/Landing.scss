@@ -52,22 +52,5 @@ $color-4: #fecea8;
             object-fit: cover;
             object-position: right;
         }
-        .burger {
-            z-index: 500;
-            position: fixed;
-            top: 50px;
-            right: 50px;
-            display: flex;
-            flex-direction: column;
-            .line1, .line2, .line3 {
-                background-color: $color-4;
-                border-radius: 2px;
-                height: 4px;
-                width: 30px;
-            }
-            .line1, .line2 {
-                margin-bottom: 5px;
-            }
-        }
     }
 }

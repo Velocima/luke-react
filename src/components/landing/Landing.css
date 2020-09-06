@@ -44,20 +44,3 @@
   object-fit: cover;
   object-position: right;
 }
-.landing-container .right .burger {
-  z-index: 500;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  display: flex;
-  flex-direction: column;
-}
-.landing-container .right .burger .line1, .landing-container .right .burger .line2, .landing-container .right .burger .line3 {
-  background-color: #fecea8;
-  border-radius: 2px;
-  height: 4px;
-  width: 30px;
-}
-.landing-container .right .burger .line1, .landing-container .right .burger .line2 {
-  margin-bottom: 5px;
-}

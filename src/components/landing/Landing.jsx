@@ -13,11 +13,6 @@ export class Landing extends React.Component {
                     </div>
                 </div>
                 <div className="right">
-                    <div className="burger">
-                        <div className="line1"></div>
-                        <div className="line2"></div>
-                        <div className="line3"></div>
-                    </div>
                     <img src={require("../../pictures/image-5.png")} alt=""/>
                 </div>
             </div>
