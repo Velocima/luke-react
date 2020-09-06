@@ -10,16 +10,20 @@ export class NavBar extends React.Component {
     handleClick(e) {
         switch (e.target.innerHTML) {
             case 'About': 
-                this.props.onNewPage(1);
+                this.props.onNewPage[0](1);
+                this.props.onNewPage[1]();
                 break;
             case 'Projects': 
-                this.props.onNewPage(1);
+                this.props.onNewPage[0](1);
+                this.props.onNewPage[1]();
                 break;
             case 'Teaching': 
-                this.props.onNewPage(1);
+                this.props.onNewPage[0](1);
+                this.props.onNewPage[1]();
                 break;
             case 'Contact': 
-                this.props.onNewPage(1);
+                this.props.onNewPage[0](1);
+                this.props.onNewPage[1]();
                 break;
             default: 
                 return;

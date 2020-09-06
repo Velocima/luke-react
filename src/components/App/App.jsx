@@ -41,6 +41,7 @@ export class App extends React.Component {
 
     handleHomeClick() {
         this.setState({pageRendered: 0});
+        if (this.state.navBarState) this.toggleNav();
     }
 
     render() {
@@ -52,7 +53,7 @@ export class App extends React.Component {
                     <div className={this.state.navBarState ? "line-2 line-2-clicked" : "line-2"}></div>
                     <div className={this.state.navBarState ? "line-3 line-3-clicked" : "line-3"}></div>
                 </div>
-                <NavBar showNav={this.state.navBarState} onNewPage={this.updatePage}/>
+                <NavBar showNav={this.state.navBarState} onNewPage={[this.updatePage, this.toggleNav]}/>
                 {this.renderPage(this.state.pageRendered)}
             </div>
         )

@@ -24,7 +24,7 @@ $color-4: #fecea8;
         flex-direction: column;
         background-color: #2a363b;
         justify-content: center;
-        animation: slideOut 1s 3s backwards;
+        animation: slideOut70 1s 3s backwards;
 
         h1 {
             color: #fecea8;
@@ -50,8 +50,8 @@ $color-4: #fecea8;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        background-color: #e84a5f;
-        animation: slideIn 1s 3s backwards;
+        background-color: $color-2;
+        animation: slideIn30 1s 3s backwards;
         img {
             position: relative;
             right: 309px;
@@ -98,7 +98,7 @@ $color-4: #fecea8;
     }
 }
 
-@keyframes slideIn {
+@keyframes slideIn30 {
     from {
         width: 0%;
     }
@@ -106,7 +106,7 @@ $color-4: #fecea8;
         width: 30%;
     }
 }
-@keyframes slideOut {
+@keyframes slideOut70 {
     from {
         width: 100%;
     }

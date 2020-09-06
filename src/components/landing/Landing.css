@@ -17,7 +17,7 @@
   flex-direction: column;
   background-color: #2a363b;
   justify-content: center;
-  animation: slideOut 1s 3s backwards;
+  animation: slideOut70 1s 3s backwards;
 }
 .landing-container .left h1 {
   color: #fecea8;
@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: flex-start;
   background-color: #e84a5f;
-  animation: slideIn 1s 3s backwards;
+  animation: slideIn30 1s 3s backwards;
 }
 .landing-container .right img {
   position: relative;
@@ -85,7 +85,7 @@
     transform: translateY(0);
   }
 }
-@keyframes slideIn {
+@keyframes slideIn30 {
   from {
     width: 0%;
   }
@@ -93,7 +93,7 @@
     width: 30%;
   }
 }
-@keyframes slideOut {
+@keyframes slideOut70 {
   from {
     width: 100%;
   }
