@@ -6,7 +6,7 @@
 }
 .landing-container .left, .landing-container .right {
   height: 100%;
-  transition: all 1s;
+  transition: all 0.7s ease-in;
 }
 .landing-container .left {
   width: 70%;
