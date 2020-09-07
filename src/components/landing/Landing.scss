@@ -32,7 +32,8 @@ $color-4: #fecea8;
             font-family: 'Montserrat', sans-serif;
             font-weight: 100;
             margin-left: 20px;
-            animation: fallIn 1s 1s backwards;
+            animation: fallIn 1s 0.5s backwards;
+            transition: all 0.7s 0.3s;
         }
         
         h3 {
@@ -41,7 +42,8 @@ $color-4: #fecea8;
             font-family: 'Montserrat', sans-serif;
             font-weight: 100;
             margin-left: 30px;
-            animation: fallIn 1s 2s backwards;
+            animation: fallIn 1s 1.5s backwards;
+            transition: all 0.7s;
         }
     }
 
@@ -51,7 +53,7 @@ $color-4: #fecea8;
         align-items: center;
         justify-content: flex-start;
         background-color: $color-2;
-        animation: slideIn30 1s 3s backwards;
+        animation: slideIn30 1s 2.5s backwards;
         img {
             position: relative;
             right: 309px;
@@ -61,7 +63,10 @@ $color-4: #fecea8;
             object-fit: cover;
             object-position: right;
             transition: all 0.5s ease-out;
-            animation: fadeIn 0.6s 3s backwards;
+            animation: fadeIn 0.6s 2.5s backwards;
+        }
+        .hide-img {
+            display: none;
         }
     }
 }
@@ -76,6 +81,10 @@ $color-4: #fecea8;
 
 .scale-down {
     opacity: 0;
+}
+
+.drop-down {
+    transform: translateY(100%);
 }
 
 @keyframes fadeIn {

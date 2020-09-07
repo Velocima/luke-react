@@ -14,7 +14,7 @@ export class NavBar extends React.Component {
                 this.props.onNewPage[1]();
                 break;
             case 'Projects': 
-                this.props.onNewPage[0](1);
+                this.props.onNewPage[0](2);
                 this.props.onNewPage[1]();
                 break;
             case 'Teaching': 

@@ -5,16 +5,23 @@ export class Landing extends React.Component {
     render () {
         return (
             <div className="landing-container">
-                <div className={this.props.showNav ? "left left-open" : "left"}>
+                <div className={this.props.showNav  || this.props.toNextPage ? "left left-open" : "left"}>
                     <div className="overflow-container">
-                        <h1>Luke Hartley</h1>
+                        <h1 className={this.props.toNextPage ? "drop-down" : ""}>Luke Hartley</h1>
                     </div>
                     <div className="overflow-container">
-                        <h3>Drummer, Educator</h3>
+                        <h3 className={this.props.toNextPage ? "drop-down" : ""}>Drummer, Educator</h3>
                     </div>
                 </div>
-                <div className={this.props.showNav ? "right right-closed" : "right"}>
-                    <img className={this.props.showNav ? "scale-down" : ""} src={require("../../pictures/image-5.png")} alt=""/>
+                <div className={this.props.showNav || this.props.toNextPage ? "right right-closed" : "right"}>
+                    <img 
+                        className={
+                            this.props.showNav && this.props.toNextPage? "scale-down" : 
+                            this.props.toNextPage ? "hide-img" : 
+                            ""
+                        } 
+                        src={require("../../pictures/image-5.png")} 
+                        alt=""/>
                 </div>
             </div>
         )
