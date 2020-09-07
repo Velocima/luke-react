@@ -47,11 +47,85 @@ $color-4: #fecea8;
     .right {
         width: 70%;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         background-color: $color-1;
         animation: slideIn70 0.9s 0.9s backwards;
         transition: all 0.5s 0.5s;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 80%;
+            li {
+                color: $color-4;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                list-style: none;
+                max-width: 200px;
+                padding: 15px;
+                margin: 20px 30px;
+                border-radius: 5px;
+            }
+            li:hover {
+                background-color: $color-3;
+            }
+            .li-1 {
+                animation: liFallIn 1s 2.4s backwards;
+                transition: transform 0.5s 0.5s;
+                background-color: $color-2;
+                font-size: 26px;
+            }
+            .li-1:hover {
+                background-color: $color-2;
+            }
+            .li-2 {
+                animation: liFallIn 1s 2.3s backwards;
+                transition: transform 0.5s 0.4s;
+                transition: background-color 0.7s;
+                cursor: pointer;
+            }
+            .li-3 {
+                animation: liFallIn 1s 2.2s backwards;
+                transition: transform 0.5s 0.3s;
+                transition: background-color 0.7s;
+                cursor: pointer;
+            }
+            .li-4 {
+                animation: liFallIn 1s 2.1s backwards;
+                transition: transform 0.5s 0.1s;
+                transition: background-color 0.7s;
+                cursor: pointer;
+            }
+            .li-5 {
+                animation: liFallIn 1s 2s backwards;
+                transition: transform 0.5s 0.1s;
+                transition: background-color 0.7s;
+                cursor: pointer;
+            }
+            .li-6 {
+                animation: liFallIn 1s 1.9s backwards;
+                transition: transform 0.5s;
+                transition: background-color 0.7s;
+                cursor: pointer;
+            }
+            .li-out {
+                transform:translateY(150%);
+            }
+        }
+
+        iframe {
+            height: 28vw;
+            width: 50vw;
+            animation: liFallIn 1s 2.5s backwards;
+        }
+        .iframe-out {
+            transform: translateY(100%);
+        }
     }
     .left-out {
         width: 0%;
@@ -84,5 +158,14 @@ $color-4: #fecea8;
     }
     to {
         width: 30%;
+    }
+}
+
+@keyframes liFallIn {
+    from {
+        transform: translateY(-150%);
+    }
+    to {
+        transform: translateY(0);
     }
 }

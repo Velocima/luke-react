@@ -10,7 +10,7 @@ export class App extends React.Component {
         super(props);
         this.state = {
             navBarState: false,
-            pageRendered: 0,
+            pageRendered: 2,
             pageIsRendering: false,
         }
         this.toggleNav = this.toggleNav.bind(this);
