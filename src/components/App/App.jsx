@@ -4,13 +4,14 @@ import { NavBar } from '../NavigationBar/NavigationBar';
 import { Landing } from '../landing/Landing'
 import { Bio } from '../Bio/Bio'
 import { Projects } from '../Projects/Projects'
+import { Contact } from '../Contact/Contact';
 
 export class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             navBarState: false,
-            pageRendered: 2,
+            pageRendered: 0,
             pageIsRendering: false,
         }
         this.toggleNav = this.toggleNav.bind(this);
@@ -33,6 +34,9 @@ export class App extends React.Component {
                 break;
             case 2:
                 return <Projects showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
+                break;
+            case 4:
+                return <Contact showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
                 break;
             default: 
                 return <Landing showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>

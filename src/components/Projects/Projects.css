@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
-.bio-container {
+.project-container {
   width: 100vw;
   height: 100vh;
   background-color: #2a363b;
@@ -7,14 +7,14 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-.bio-container .overflow-container {
+.project-container .overflow-container {
   overflow: hidden;
 }
-.bio-container .left, .bio-container .right {
+.project-container .left, .project-container .right {
   height: 100%;
   transition: all 0.7s ease-in;
 }
-.bio-container .left {
+.project-container .left {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -23,16 +23,16 @@
   animation: slideOut30 1.8s backwards;
   transition: all 0.5s 0.5s;
 }
-.bio-container .left h1 {
+.project-container .left h1 {
   color: #fecea8;
   font-size: 120px;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   margin-left: 20px;
   animation: fallIn 1s 1.4s backwards;
-  transition: all 0.7s 0.3s;
+  transition: all 0.5s 0.3;
 }
-.bio-container .right {
+.project-container .right {
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -42,7 +42,7 @@
   animation: slideIn70 0.9s 0.9s backwards;
   transition: all 0.5s 0.5s;
 }
-.bio-container .right ul {
+.project-container .right ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@
   flex-wrap: wrap;
   max-width: 80%;
 }
-.bio-container .right ul li {
+.project-container .right ul li {
   color: #fecea8;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -61,63 +61,62 @@
   margin: 20px 30px;
   border-radius: 5px;
 }
-.bio-container .right ul li:hover {
+.project-container .right ul li:hover {
   background-color: #ff847c;
 }
-.bio-container .right ul .li-1 {
+.project-container .right ul .li-1 {
   animation: liFallIn 1s 2.4s backwards;
-  transition: transform 0.5s 0.5s;
+  transition: transform 0.5s 250ms;
   background-color: #e84a5f;
   font-size: 26px;
 }
-.bio-container .right ul .li-1:hover {
+.project-container .right ul .li-1:hover {
   background-color: #e84a5f;
 }
-.bio-container .right ul .li-2 {
+.project-container .right ul .li-2 {
   animation: liFallIn 1s 2.3s backwards;
-  transition: transform 0.5s 0.4s;
-  transition: background-color 0.7s;
+  transition: transform 0.5s 0.2s, background-color 0.7s;
   cursor: pointer;
 }
-.bio-container .right ul .li-3 {
+.project-container .right ul .li-3 {
   animation: liFallIn 1s 2.2s backwards;
-  transition: transform 0.5s 0.3s;
-  transition: background-color 0.7s;
+  transition: transform 0.5s 150ms, background-color 0.7s;
   cursor: pointer;
 }
-.bio-container .right ul .li-4 {
+.project-container .right ul .li-4 {
   animation: liFallIn 1s 2.1s backwards;
-  transition: transform 0.5s 0.1s;
-  transition: background-color 0.7s;
+  transition: transform 0.5s 0.1s, background-color 0.7s;
   cursor: pointer;
 }
-.bio-container .right ul .li-5 {
+.project-container .right ul .li-5 {
   animation: liFallIn 1s 2s backwards;
-  transition: transform 0.5s 0.1s;
-  transition: background-color 0.7s;
+  transition: transform 0.5s 50ms, background-color 0.7s;
   cursor: pointer;
 }
-.bio-container .right ul .li-6 {
+.project-container .right ul .li-6 {
   animation: liFallIn 1s 1.9s backwards;
-  transition: transform 0.5s;
-  transition: background-color 0.7s;
+  transition: transform 0.5s, background-color 0.7s;
   cursor: pointer;
 }
-.bio-container .right ul .li-out {
+.project-container .right ul .li-active {
+  background-color: #ff847c;
+}
+.project-container .right ul .li-out {
   transform: translateY(150%);
 }
-.bio-container .right iframe {
+.project-container .right iframe {
   height: 28vw;
   width: 50vw;
   animation: liFallIn 1s 2.5s backwards;
+  transition: all 0.5s;
 }
-.bio-container .right .iframe-out {
-  transform: translateY(100%);
+.project-container .right .iframe-out {
+  transform: translateY(120%);
 }
-.bio-container .left-out {
+.project-container .left-out {
   width: 0%;
 }
-.bio-container .right-out {
+.project-container .right-out {
   width: 100%;
 }
 

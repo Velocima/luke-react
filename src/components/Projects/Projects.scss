@@ -5,8 +5,7 @@ $color-2: #e84a5f;
 $color-3: #ff847c;
 $color-4: #fecea8;
 
-
-.bio-container {
+.project-container {
     width: 100vw;
     height: 100vh;
     background-color: $color-1;
@@ -40,7 +39,7 @@ $color-4: #fecea8;
             font-weight: 100;
             margin-left: 20px;
             animation: fallIn 1s 1.4s backwards;
-            transition: all 0.7s 0.3s;
+            transition: all 0.5s 0.3;
         }
     }
 
@@ -76,7 +75,7 @@ $color-4: #fecea8;
             }
             .li-1 {
                 animation: liFallIn 1s 2.4s backwards;
-                transition: transform 0.5s 0.5s;
+                transition: transform 0.5s 250ms;
                 background-color: $color-2;
                 font-size: 26px;
             }
@@ -85,36 +84,41 @@ $color-4: #fecea8;
             }
             .li-2 {
                 animation: liFallIn 1s 2.3s backwards;
-                transition: transform 0.5s 0.4s;
-                transition: background-color 0.7s;
+                transition: transform 0.5s 0.2s, 
+                    background-color 0.7s;
                 cursor: pointer;
             }
             .li-3 {
                 animation: liFallIn 1s 2.2s backwards;
-                transition: transform 0.5s 0.3s;
-                transition: background-color 0.7s;
+                transition: transform 0.5s 150ms,
+                    background-color 0.7s;
                 cursor: pointer;
             }
             .li-4 {
                 animation: liFallIn 1s 2.1s backwards;
-                transition: transform 0.5s 0.1s;
-                transition: background-color 0.7s;
+                transition: transform 0.5s 0.1s,
+                    background-color 0.7s;
                 cursor: pointer;
             }
             .li-5 {
                 animation: liFallIn 1s 2s backwards;
-                transition: transform 0.5s 0.1s;
-                transition: background-color 0.7s;
+                transition: transform 0.5s 50ms,
+                    background-color 0.7s;
                 cursor: pointer;
             }
             .li-6 {
                 animation: liFallIn 1s 1.9s backwards;
-                transition: transform 0.5s;
-                transition: background-color 0.7s;
+                transition: transform 0.5s,
+                    background-color 0.7s;
                 cursor: pointer;
             }
+
+            .li-active {
+                background-color: $color-3;
+            }
+
             .li-out {
-                transform:translateY(150%);
+                transform: translateY(150%);
             }
         }
 
@@ -122,9 +126,10 @@ $color-4: #fecea8;
             height: 28vw;
             width: 50vw;
             animation: liFallIn 1s 2.5s backwards;
+            transition: all 0.5s;
         }
         .iframe-out {
-            transform: translateY(100%);
+            transform: translateY(120%);
         }
     }
     .left-out {

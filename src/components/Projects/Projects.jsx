@@ -7,38 +7,46 @@ export class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16"
+            videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16",
+            listItem: 2,
         }
         this.handleClick = this.handleClick.bind(this);
+        this.setClassName = this.setClassName.bind(this);
     }
     
     handleClick(e) {
         switch (e.target.innerHTML) {
             case "Bow to the Sound - Year of the Dog":
-                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16"})
+                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16", listItem: 2})
                 break;
             case "She Makes me Feel - Year of the Dog":
-                this.setState({videoSrc: "https://www.youtube.com/embed/iSIoW8uyj6k?start=26"})
+                this.setState({videoSrc: "https://www.youtube.com/embed/iSIoW8uyj6k?start=26", listItem: 3})
                 break;
             case "Sex Education does Romeo and Juliet":
-                this.setState({videoSrc: "https://www.youtube.com/embed/u3o5YdZSOQQ"})
+                this.setState({videoSrc: "https://www.youtube.com/embed/u3o5YdZSOQQ", listItem: 4})
                 break;
             case "Sweet Songs of Survival - Monc":
-                this.setState({videoSrc: "https://www.youtube.com/embed/QeQC1JuhxzQ"})
+                this.setState({videoSrc: "https://www.youtube.com/embed/QeQC1JuhxzQ", listItem: 5})
                 break;
             case "The Defender - Last Change Lawyer NYC Soundtrack":
-                this.setState({videoSrc: "https://www.youtube.com/embed/onYyRb_Jpms"})
+                this.setState({videoSrc: "https://www.youtube.com/embed/onYyRb_Jpms", listItem: 6})
                 break;
             default:
-                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16"})
+                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16", listItem: 2})
                 break;
 
         }
     }
+    setClassName(item) {
+        let nextPage = this.props.toNextPage ? "li-out" : "";
+        let linkActive = this.state.listItem === item ? "li-active" : "";
+        if (item === 1) return `${nextPage}`;
+        return `${nextPage} ${linkActive}`
+    }
 
     render () {
         return (
-            <div className="bio-container">
+            <div className="project-container">
                 <div className={this.props.toNextPage ? "left left-out" : "left"}>
                     <div className="overflow-container">
                         <h1 className={this.props.toNextPage ? "drop-down" : ""}>Projects</h1>
@@ -47,26 +55,26 @@ export class Projects extends React.Component {
                 <div className={this.props.toNextPage ? "right right-out" : "right"}>
                     <ul>
                         <div className="overflow-container">
-                            <li className="li-1">My works:</li>
+                            <li className={`li-1 ${this.setClassName(1)}`}>My works:</li>
                         </div>
                         <div className="overflow-container">
-                            <li className="li-2" onClick={this.handleClick}>Bow to the Sound - Year of the Dog</li>
+                            <li className={`li-2 ${this.setClassName(2)}`} onClick={this.handleClick}>Bow to the Sound - Year of the Dog</li>
                         </div>
                         <div className="overflow-container">
-                            <li className="li-3" onClick={this.handleClick}>She Makes me Feel - Year of the Dog</li>
+                            <li className={`li-3 ${this.setClassName(3)}`} onClick={this.handleClick}>She Makes me Feel - Year of the Dog</li>
                         </div>
                         <div className="overflow-container">
-                            <li className="li-4" onClick={this.handleClick}>Sex Education does Romeo and Juliet</li>
+                            <li className={`li-4 ${this.setClassName(4)}`} onClick={this.handleClick}>Sex Education does Romeo and Juliet</li>
                         </div>
                         <div className="overflow-container">
-                            <li className="li-5" onClick={this.handleClick}>Sweet Songs of Survival - Monc</li>
+                            <li className={`li-5 ${this.setClassName(5)}`} onClick={this.handleClick}>Sweet Songs of Survival - Monc</li>
                         </div>
                         <div className="overflow-container">
-                            <li className="li-6" onClick={this.handleClick}>The Defender - Last Change Lawyer NYC Soundtrack</li>
+                            <li className={`li-6 ${this.setClassName(6)}`} onClick={this.handleClick}>The Defender - Last Change Lawyer NYC Soundtrack</li>
                         </div>
                     </ul>
                     <div className="overflow-container">
-                        <iframe className="card-img" src={this.state.videoSrc} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe className={this.props.toNextPage ? "iframe-out" : ""} src={this.state.videoSrc} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
