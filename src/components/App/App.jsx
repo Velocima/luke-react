@@ -11,7 +11,7 @@ export class App extends React.Component {
         super(props);
         this.state = {
             navBarState: false,
-            pageRendered: 0,
+            pageRendered: 4,
             pageIsRendering: false,
         }
         this.toggleNav = this.toggleNav.bind(this);

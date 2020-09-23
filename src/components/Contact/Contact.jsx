@@ -4,9 +4,42 @@ import './Contact.css'
 export class Contact extends React.Component {
     constructor(props) {
         super(props);
-        this.sendEmail = this.sendEmail.bind(this);
+        this.state = {
+            name: "",
+            message: "",
+            subject: "",
+            email: "",
+        }
+        this.sendMail = this.sendMail.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
-    sendEmail() {
+
+    handleChange(e) {
+        this.setState({[e.target.id]: e.target.value});
+    }
+    async sendMail(e) {
+        e.preventDefault();
+        const { name, email, subject, message } = this.state;
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                email: {
+                    name, 
+                    email, 
+                    subject, 
+                    message,
+                }
+            })
+        }
+
+        const response = await fetch("http://maxemailserver.com/api/sendmail/luke", requestOptions);
+
+        console.log(response)
+    
     }
 
     render () {
@@ -19,15 +52,16 @@ export class Contact extends React.Component {
                 </div>
                 <div className={this.props.toNextPage ? "right right-out" : "right"}>
                     <div className="overflow-container">
-                        <form action="">
+                        <form onSubmit={this.sendMail}>
                             <label htmlFor="name">Name</label>
-                            <input type="text" id="name"/>
+                            <input type="text" id="name" onChange={this.handleChange} required/>
                             <label htmlFor="subject">subject</label>
-                            <input type="text" id="subject"/>
+                            <input type="text" id="subject" onChange={this.handleChange} required/>
                             <label htmlFor="email">Email</label>
-                            <input type="mail" id="subject"/>
+                            <input type="mail" id="email" onChange={this.handleChange} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
                             <label htmlFor="message">Message</label>
-                            <input type="text" id="message"/>
+                            <input type="text" id="message" onChange={this.handleChange} required/>
+                            <input type="submit" value="Submit"/>
                         </form>
                     </div>
                 </div>
