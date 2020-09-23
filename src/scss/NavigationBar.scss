@@ -1,7 +1,7 @@
-$color-1: #2a363b;
-$color-2: #e84a5f;
-$color-3: #ff847c;
-$color-4: #fecea8;
+@import 'helpers/_animations.scss';
+@import 'helpers/_variables.scss';
+@import 'helpers/animation-classes';
+
 nav {
     position: fixed;
     right: 0;
@@ -33,7 +33,3 @@ nav {
     }
 }
 
-.active {
-    transform: translateX(0);
-    opacity: 1;
-}

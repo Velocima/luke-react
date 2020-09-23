@@ -1,0 +1,123 @@
+@keyframes slideIn70 {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+
+@keyframes slideOut30 {
+  from {
+    width: 0; }
+  50% {
+    width: 100%; }
+  to {
+    width: 30%; } }
+
+@keyframes liFallIn {
+  from {
+    transform: translateY(-150%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes fallIn {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes slideIn30 {
+  from {
+    width: 0%; }
+  to {
+    width: 30%; } }
+
+@keyframes slideOut70 {
+  from {
+    width: 100%; }
+  to {
+    width: 70%; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.drop-down {
+  transform: translateY(100%); }
+
+.line-1-clicked {
+  transform: rotate(-360deg); }
+
+.line-2-clicked {
+  transform: rotate(360deg); }
+
+.line-3-clicked {
+  transform: rotate(-360deg); }
+
+.invisible {
+  opacity: 0;
+  cursor: default; }
+
+.right-closed {
+  width: 0 !important; }
+
+.left-open {
+  width: 100% !important; }
+
+.scale-down {
+  opacity: 0; }
+
+.landing-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row; }
+  .landing-container .left, .landing-container .right {
+    height: 100%;
+    transition: all 0.7s ease-in; }
+  .landing-container .overflow-container {
+    overflow: hidden; }
+  .landing-container .left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2a363b;
+    justify-content: center;
+    animation: slideOut70 1s 3s backwards; }
+    .landing-container .left h1 {
+      color: #fecea8;
+      font-size: 120px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      margin-left: 20px;
+      animation: fallIn 1s 0.5s backwards;
+      transition: all 0.7s 0.3s; }
+    .landing-container .left h3 {
+      color: #fecea8;
+      font-size: 50px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      margin-left: 30px;
+      animation: fallIn 1s 1.5s backwards;
+      transition: all 0.7s; }
+  .landing-container .right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e84a5f;
+    animation: slideIn30 1s 2.5s backwards; }
+    .landing-container .right img {
+      position: relative;
+      right: 309px;
+      border-radius: 50%;
+      height: 618px;
+      width: 618px;
+      object-fit: cover;
+      object-position: right;
+      transition: all 0.5s ease-out;
+      animation: fadeIn 0.6s 2.5s backwards; }
+    .landing-container .right .hide-img {
+      display: none; }

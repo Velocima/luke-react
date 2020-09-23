@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
-$color-1: #2a363b;
-$color-2: #e84a5f;
-$color-3: #ff847c;
-$color-4: #fecea8;
+@import 'helpers/_animations.scss';
+@import 'helpers/_variables.scss';
+@import 'helpers/animation-classes';
 
 .bio-container {
     width: 100vw;
@@ -73,26 +70,3 @@ $color-4: #fecea8;
 
 }
 
-.drop-down {
-    transform: translateY(100%);
-}
-
-@keyframes slideIn70 {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 70%;
-    }
-}
-@keyframes slideOut30 {
-    from {
-        width: 0;
-    }
-    50% {
-        width: 100%;
-    }
-    to {
-        width: 30%;
-    }
-}

@@ -1,4 +1,4 @@
-import './App.css';
+import '../../css/App.css';
 import React from 'react';
 import { NavBar } from '../NavigationBar/NavigationBar';
 import { Landing } from '../landing/Landing'

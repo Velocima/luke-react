@@ -1,0 +1,169 @@
+@keyframes slideIn70 {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+
+@keyframes slideOut30 {
+  from {
+    width: 0; }
+  50% {
+    width: 100%; }
+  to {
+    width: 30%; } }
+
+@keyframes liFallIn {
+  from {
+    transform: translateY(-150%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes fallIn {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes slideIn30 {
+  from {
+    width: 0%; }
+  to {
+    width: 30%; } }
+
+@keyframes slideOut70 {
+  from {
+    width: 100%; }
+  to {
+    width: 70%; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.drop-down {
+  transform: translateY(100%); }
+
+.line-1-clicked {
+  transform: rotate(-360deg); }
+
+.line-2-clicked {
+  transform: rotate(360deg); }
+
+.line-3-clicked {
+  transform: rotate(-360deg); }
+
+.invisible {
+  opacity: 0;
+  cursor: default; }
+
+.right-closed {
+  width: 0 !important; }
+
+.left-open {
+  width: 100% !important; }
+
+.scale-down {
+  opacity: 0; }
+
+.project-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a363b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .project-container .overflow-container {
+    overflow: hidden; }
+  .project-container .left, .project-container .right {
+    height: 100%;
+    transition: all 0.7s ease-in; }
+  .project-container .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e84a5f;
+    justify-content: center;
+    animation: slideOut30 1.8s backwards;
+    transition: all 0.5s 0.5s; }
+    .project-container .left h1 {
+      color: #fecea8;
+      font-size: 120px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      margin-left: 20px;
+      animation: fallIn 1s 1.4s backwards;
+      transition: all 0.5s 0.3; }
+  .project-container .right {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2a363b;
+    animation: slideIn70 0.9s 0.9s backwards;
+    transition: all 0.5s 0.5s; }
+    .project-container .right ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 80%; }
+      .project-container .right ul li {
+        color: #fecea8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        list-style: none;
+        max-width: 200px;
+        padding: 15px;
+        margin: 20px 30px;
+        border-radius: 5px; }
+      .project-container .right ul li:hover {
+        background-color: #ff847c; }
+      .project-container .right ul .li-1 {
+        animation: liFallIn 1s 2.4s backwards;
+        transition: transform 0.5s 250ms;
+        background-color: #e84a5f;
+        font-size: 26px; }
+      .project-container .right ul .li-1:hover {
+        background-color: #e84a5f; }
+      .project-container .right ul .li-2 {
+        animation: liFallIn 1s 2.3s backwards;
+        transition: transform 0.5s 0.2s,  background-color 0.7s;
+        cursor: pointer; }
+      .project-container .right ul .li-3 {
+        animation: liFallIn 1s 2.2s backwards;
+        transition: transform 0.5s 150ms, background-color 0.7s;
+        cursor: pointer; }
+      .project-container .right ul .li-4 {
+        animation: liFallIn 1s 2.1s backwards;
+        transition: transform 0.5s 0.1s, background-color 0.7s;
+        cursor: pointer; }
+      .project-container .right ul .li-5 {
+        animation: liFallIn 1s 2s backwards;
+        transition: transform 0.5s 50ms, background-color 0.7s;
+        cursor: pointer; }
+      .project-container .right ul .li-6 {
+        animation: liFallIn 1s 1.9s backwards;
+        transition: transform 0.5s, background-color 0.7s;
+        cursor: pointer; }
+      .project-container .right ul .li-active {
+        background-color: #ff847c; }
+      .project-container .right ul .li-out {
+        transform: translateY(150%); }
+    .project-container .right iframe {
+      height: 28vw;
+      width: 50vw;
+      animation: liFallIn 1s 2.5s backwards;
+      transition: all 0.5s; }
+    .project-container .right .iframe-out {
+      transform: translateY(120%); }
+  .project-container .left-out {
+    width: 0%; }
+  .project-container .right-out {
+    width: 100%; }

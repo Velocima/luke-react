@@ -1,0 +1,108 @@
+@keyframes slideIn70 {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+
+@keyframes slideOut30 {
+  from {
+    width: 0; }
+  50% {
+    width: 100%; }
+  to {
+    width: 30%; } }
+
+@keyframes liFallIn {
+  from {
+    transform: translateY(-150%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes fallIn {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes slideIn30 {
+  from {
+    width: 0%; }
+  to {
+    width: 30%; } }
+
+@keyframes slideOut70 {
+  from {
+    width: 100%; }
+  to {
+    width: 70%; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.drop-down {
+  transform: translateY(100%); }
+
+.line-1-clicked {
+  transform: rotate(-360deg); }
+
+.line-2-clicked {
+  transform: rotate(360deg); }
+
+.line-3-clicked {
+  transform: rotate(-360deg); }
+
+.invisible {
+  opacity: 0;
+  cursor: default; }
+
+.right-closed {
+  width: 0 !important; }
+
+.left-open {
+  width: 100% !important; }
+
+.scale-down {
+  opacity: 0; }
+
+.app {
+  overflow-x: hidden; }
+  .app .fas {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    padding: 10px;
+    font-size: 30px;
+    width: 36px;
+    text-align: center;
+    text-decoration: none;
+    color: #fecea8;
+    border-radius: 5px;
+    transition: all 0.7s;
+    cursor: pointer; }
+  .app .fas:hover {
+    background-color: #ff847c; }
+  .app .burger {
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 500;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.7s; }
+    .app .burger .line-1, .app .burger .line-2, .app .burger .line-3 {
+      background-color: #fecea8;
+      border-radius: 2px;
+      height: 4px;
+      width: 30px;
+      transition: all 1s; }
+    .app .burger .line-1, .app .burger .line-2 {
+      margin-bottom: 5px; }
+  .app .burger:hover {
+    background-color: #ff847c; }

@@ -1,0 +1,65 @@
+@keyframes slideIn70 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes slideOut30 {
+    from {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes liFallIn {
+    from {
+        transform: translateY(-150%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fallIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn30 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+@keyframes slideOut70 {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

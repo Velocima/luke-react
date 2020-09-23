@@ -1,5 +1,6 @@
 import React from 'react';
-import './Contact.css'
+import '../../css/Contact.css';
+
 
 export class Contact extends React.Component {
     constructor(props) {
@@ -60,7 +61,7 @@ export class Contact extends React.Component {
                             <label htmlFor="email">Email</label>
                             <input type="mail" id="email" onChange={this.handleChange} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
                             <label htmlFor="message">Message</label>
-                            <input type="text" id="message" onChange={this.handleChange} required/>
+                            <textarea type="text" id="message" onChange={this.handleChange} required/>
                             <input type="submit" value="Submit"/>
                         </form>
                     </div>
