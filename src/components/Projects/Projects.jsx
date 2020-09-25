@@ -7,6 +7,7 @@ export class Projects extends React.Component {
         super(props);
         this.state = {
             videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16",
+            videoTitle: "",
             listItem: 2,
         }
         this.handleClick = this.handleClick.bind(this);
@@ -16,22 +17,41 @@ export class Projects extends React.Component {
     handleClick(e) {
         switch (e.target.innerHTML) {
             case "Bow to the Sound - Year of the Dog":
-                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16", listItem: 2})
+                this.setState({
+                    videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16", 
+                    videoTitle: "Bow to the Sound - Year of the Dog",
+                    listItem: 2
+                })
                 break;
             case "She Makes me Feel - Year of the Dog":
-                this.setState({videoSrc: "https://www.youtube.com/embed/iSIoW8uyj6k?start=26", listItem: 3})
+                this.setState({videoSrc: "https://www.youtube.com/embed/iSIoW8uyj6k?start=26",
+                    videoTitle: "Year of the Dog - She Makes Me Feel", 
+                    listItem: 3
+                })
                 break;
             case "Sex Education does Romeo and Juliet":
-                this.setState({videoSrc: "https://www.youtube.com/embed/u3o5YdZSOQQ", listItem: 4})
+                this.setState({videoSrc: "https://www.youtube.com/embed/u3o5YdZSOQQ", 
+                    videoTitle: "Sex Education Does Romeo & Juliet - The Musical In Full (Exclusive Unseen Footage)",
+                    listItem: 4
+                })
                 break;
             case "Sweet Songs of Survival - Monc":
-                this.setState({videoSrc: "https://www.youtube.com/embed/QeQC1JuhxzQ", listItem: 5})
+                this.setState({videoSrc: "https://www.youtube.com/embed/QeQC1JuhxzQ", 
+                    videoTitle: "Preview of the new album 'Sweet Songs Of Survival' by Monc",
+                    listItem: 5
+                })
                 break;
             case "The Defender - Last Change Lawyer NYC Soundtrack":
-                this.setState({videoSrc: "https://www.youtube.com/embed/onYyRb_Jpms", listItem: 6})
+                this.setState({videoSrc: "https://www.youtube.com/embed/onYyRb_Jpms", 
+                    videoTitle: "\"The Defender\" from my score for BBC2's \"Last Chance Lawyer NYC\" (2018)",
+                    listItem: 6
+                })
                 break;
             default:
-                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16", listItem: 2})
+                this.setState({videoSrc: "https://www.youtube.com/embed/b6piPlGImMA?start=16", 
+                    videoTitle: "Bow to the Sound - Year of the Dog",
+                    listItem: 2
+                })
                 break;
 
         }
@@ -73,7 +93,7 @@ export class Projects extends React.Component {
                         </div>
                     </ul>
                     <div className="overflow-container">
-                        <iframe className={this.props.toNextPage ? "iframe-out" : ""} src={this.state.videoSrc} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe className={this.props.toNextPage ? "iframe-out" : ""} src={this.state.videoSrc} title={this.state.videoTitle} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
