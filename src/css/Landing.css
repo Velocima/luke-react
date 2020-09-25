@@ -115,10 +115,10 @@
     animation: slideIn30 1s 2.5s backwards; }
     .landing-container .right img {
       position: relative;
-      right: 309px;
+      right: 16vw;
       border-radius: 50%;
-      height: 618px;
-      width: 618px;
+      height: 32vw;
+      width: 32vw;
       object-fit: cover;
       object-position: right;
       transition: all 0.5s ease-out;

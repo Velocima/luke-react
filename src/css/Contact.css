@@ -113,31 +113,31 @@
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
-      animation: fallIn 1s 2.2s backwards;
       transition: all 0.7s; }
       .contact-container .right form .overflow-container {
         margin: 10px; }
-      .contact-container .right form label {
-        color: #fecea8;
-        font-size: 22px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        animation: fallIn 1s 2.2s backwards;
-        transition: all 0.7s; }
-      .contact-container .right form input, .contact-container .right form textarea {
-        font: inherit;
-        width: 30vw;
-        background-color: #ff847c;
-        color: #fecea8;
-        transition: all 0.4s;
-        padding: 10px;
-        border-radius: 5px; }
-      .contact-container .right form textarea {
-        resize: none;
-        height: 10vh; }
-      .contact-container .right form input:focus, .contact-container .right form textarea:focus {
-        background-color: #e84a5f;
-        outline: none; }
+        .contact-container .right form .overflow-container label {
+          display: block;
+          color: #fecea8;
+          font-size: 22px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          animation: fallIn 1s 2.2s backwards;
+          transition: all 0.7s; }
+          .contact-container .right form .overflow-container label input, .contact-container .right form .overflow-container label textarea {
+            font: inherit;
+            width: 30vw;
+            background-color: #ff847c;
+            color: #fecea8;
+            transition: all 0.4s;
+            padding: 10px;
+            border-radius: 5px; }
+          .contact-container .right form .overflow-container label textarea {
+            resize: none;
+            height: 10vh; }
+          .contact-container .right form .overflow-container label input:focus, .contact-container .right form .overflow-container label textarea:focus {
+            background-color: #e84a5f;
+            outline: none; }
       .contact-container .right form .submit-button {
         background-color: #ff847c;
         color: #fecea8;
@@ -145,9 +145,10 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         width: 150px;
-        padding: 10px;
-        margin: 2vh 5vh;
-        border-radius: 5px; }
+        height: 50px;
+        margin: 0 5vh;
+        border-radius: 5px;
+        animation: fallIn 1s 2.2s backwards; }
       .contact-container .right form .submit-button:focus {
         background-color: #e84a5f;
         outline: none; }
