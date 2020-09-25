@@ -17,7 +17,7 @@ export class Landing extends React.Component {
                 <div className={this.props.showNav || this.props.toNextPage ? "right right-closed" : "right"}>
                     <img 
                         className={
-                            this.props.showNav && this.props.toNextPage? "scale-down" : 
+                            this.props.showNav ? "opacity-zero" : 
                             this.props.toNextPage ? "hide-img" : 
                             ""
                         } 

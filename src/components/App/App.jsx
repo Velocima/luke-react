@@ -57,7 +57,7 @@ export class App extends React.Component {
         });
         setTimeout(() => this.setState({
             pageRendered: 0,
-            pageIsRendering: false
+            pageIsRendering: false,
         }), 1000);
     }
 
