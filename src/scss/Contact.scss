@@ -94,6 +94,7 @@
                 margin: 0 5vh;
                 border-radius: 5px;
                 animation: fallIn 1s 2.2s backwards;
+                transition: all 0.4s;
             }
             .submit-button:focus {
                 background-color: $color-2;

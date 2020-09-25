@@ -61,7 +61,7 @@ export class Contact extends React.Component {
                                 </label>
                             </div>
                             <div className="overflow-container">
-                                <label htmlFor="subject">Subject<br></br>
+                                <label className={this.props.toNextPage ? "drop-down" : ""} htmlFor="subject">Subject<br></br>
                                     <input type="text" placeholder="Enter a subject" id="subject" onChange={this.handleChange} required/>
                                 </label>
                             </div>
@@ -76,7 +76,7 @@ export class Contact extends React.Component {
                                 </label>
                             </div>
                             <div className="overflow-container">
-                                <input className="submit-button" type="submit" value="Submit"/>
+                                <input className={`submit-button ${this.props.toNextPage ? "drop-down" : ""}`} type="submit" value="Submit"/>
                             </div>
                         </form>
                     </div>
