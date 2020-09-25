@@ -112,7 +112,7 @@
     .bio-container .right p {
       max-width: 50vw;
       max-height: 70vh;
-      overflow: scroll;
+      overflow-y: auto;
       color: #fecea8;
       font-size: 22px;
       font-family: 'Montserrat', sans-serif;
