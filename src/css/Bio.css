@@ -69,6 +69,10 @@
 .scale-down {
   opacity: 0; }
 
+.active {
+  transform: translateX(0);
+  opacity: 1; }
+
 .bio-container {
   width: 100vw;
   height: 100vh;

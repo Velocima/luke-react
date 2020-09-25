@@ -28,19 +28,14 @@ export class App extends React.Component {
         switch (state) {
             case 0:
                 return <Landing showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
-                break;
             case 1:
                 return <Bio showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
-                break;
             case 2:
                 return <Projects showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
-                break;
             case 4:
                 return <Contact showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
-                break;
             default: 
                 return <Landing showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
-                break;
         }
     }
 

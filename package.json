@@ -14,7 +14,7 @@
     "react-scripts": "^3.4.3"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"node-sass --watch src/scss -o src/css\"",
+    "start": "concurrently  -n \"react,scss\" \"react-scripts start\" \"node-sass --watch src/scss -o src/css\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -69,6 +69,10 @@
 .scale-down {
   opacity: 0; }
 
+.active {
+  transform: translateX(0);
+  opacity: 1; }
+
 .contact-container {
   width: 100vw;
   height: 100vh;
@@ -108,16 +112,45 @@
     .contact-container .right form {
       display: flex;
       justify-content: flex-start;
-      flex-direction: column; }
-    .contact-container .right p {
-      max-width: 50vw;
-      color: #fecea8;
-      font-size: 22px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 300;
-      margin-left: 30px;
+      flex-direction: column;
       animation: fallIn 1s 2.2s backwards;
       transition: all 0.7s; }
+      .contact-container .right form .overflow-container {
+        margin: 10px; }
+      .contact-container .right form label {
+        color: #fecea8;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        animation: fallIn 1s 2.2s backwards;
+        transition: all 0.7s; }
+      .contact-container .right form input, .contact-container .right form textarea {
+        font: inherit;
+        width: 30vw;
+        background-color: #ff847c;
+        color: #fecea8;
+        transition: all 0.4s;
+        padding: 10px;
+        border-radius: 5px; }
+      .contact-container .right form textarea {
+        resize: none;
+        height: 10vh; }
+      .contact-container .right form input:focus, .contact-container .right form textarea:focus {
+        background-color: #e84a5f;
+        outline: none; }
+      .contact-container .right form .submit-button {
+        background-color: #ff847c;
+        color: #fecea8;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        width: 150px;
+        padding: 10px;
+        margin: 2vh 5vh;
+        border-radius: 5px; }
+      .contact-container .right form .submit-button:focus {
+        background-color: #e84a5f;
+        outline: none; }
   .contact-container .left-out {
     width: 0%; }
   .contact-container .right-out {

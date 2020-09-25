@@ -1,7 +1,6 @@
 @import 'helpers/_animations.scss';
 @import 'helpers/_variables.scss';
-@import 'helpers/animation-classes';
-
+@import 'helpers/_animation-classes';
 
 .contact-container {
     width: 100vw;
@@ -54,16 +53,51 @@
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
-        }
-        p {
-            max-width: 50vw;
-            color: $color-4;
-            font-size: 22px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            margin-left: 30px;
             animation: fallIn 1s 2.2s backwards;
             transition: all 0.7s;
+            .overflow-container {
+                margin: 10px;
+            }
+            label {
+                color: $color-4;
+                font-size: 22px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                animation: fallIn 1s 2.2s backwards;
+                transition: all 0.7s;
+            }
+            input, textarea {
+                font: inherit;
+                width: 30vw;
+                background-color: $color-3;
+                color: $color-4;
+                transition: all 0.4s;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            textarea {
+                resize: none;
+                height: 10vh;
+            }
+            input:focus, textarea:focus {
+                background-color: $color-2;
+                outline: none;
+            }
+            .submit-button {
+                background-color: $color-3;
+                color: $color-4;
+                font-size: 22px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                width: 150px;
+                padding: 10px;
+                margin: 2vh 5vh;
+                border-radius: 5px;
+            }
+            .submit-button:focus {
+                background-color: $color-2;
+                outline: none;
+            }
         }
     }
     .left-out {

@@ -69,6 +69,10 @@
 .scale-down {
   opacity: 0; }
 
+.active {
+  transform: translateX(0);
+  opacity: 1; }
+
 nav {
   position: fixed;
   right: 0;

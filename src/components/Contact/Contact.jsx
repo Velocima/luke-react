@@ -10,6 +10,7 @@ export class Contact extends React.Component {
             message: "",
             subject: "",
             email: "",
+            messageSent: false,
         }
         this.sendMail = this.sendMail.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -53,16 +54,28 @@ export class Contact extends React.Component {
                 </div>
                 <div className={this.props.toNextPage ? "right right-out" : "right"}>
                     <div className="overflow-container">
-                        <form onSubmit={this.sendMail}>
-                            <label htmlFor="name">Name</label>
-                            <input type="text" id="name" onChange={this.handleChange} required/>
-                            <label htmlFor="subject">subject</label>
-                            <input type="text" id="subject" onChange={this.handleChange} required/>
-                            <label htmlFor="email">Email</label>
-                            <input type="mail" id="email" onChange={this.handleChange} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
-                            <label htmlFor="message">Message</label>
-                            <textarea type="text" id="message" onChange={this.handleChange} required/>
-                            <input type="submit" value="Submit"/>
+                        <form className={this.props.toNextPage ? "drop-down" : ""} onSubmit={this.sendMail}>
+                            <div className="overflow-container">
+                                <label className={this.props.toNextPage ? "drop-down" : ""} htmlFor="name">Name<br></br>
+                                    <input type="text" placeholder="Enter your name" id="name" onChange={this.handleChange} required/>
+                                </label>
+                            </div>
+                            <div className="overflow-container">
+                                <label htmlFor="subject">Subject<br></br>
+                                    <input type="text" placeholder="Enter a subject" id="subject" onChange={this.handleChange} required/>
+                                </label>
+                            </div>
+                            <div className="overflow-container">
+                                <label className={this.props.toNextPage ? "drop-down" : ""} htmlFor="email">Email<br></br>
+                                    <input type="mail" placeholder="Enter your email address" id="email" onChange={this.handleChange} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                                </label>
+                            </div>
+                            <div className="overflow-container">
+                                <label className={this.props.toNextPage ? "drop-down" : ""} htmlFor="message">Message<br></br>
+                                    <textarea type="text" placeholder="Enter your message" id="message" onChange={this.handleChange} required/>
+                                </label>
+                            </div>
+                            <input className="submit-button" type="submit" value="Submit"/>
                         </form>
                     </div>
                 </div>
