@@ -92,7 +92,7 @@
     animation: slideOut70 1s 3s backwards; }
     .landing-container .left h1 {
       color: #fecea8;
-      font-size: 120px;
+      font-size: 6.25vw;
       font-family: 'Montserrat', sans-serif;
       font-weight: 100;
       margin-left: 20px;
@@ -100,7 +100,7 @@
       transition: all 0.7s 0.3s; }
     .landing-container .left h3 {
       color: #fecea8;
-      font-size: 50px;
+      font-size: 2.6vw;
       font-family: 'Montserrat', sans-serif;
       font-weight: 100;
       margin-left: 30px;

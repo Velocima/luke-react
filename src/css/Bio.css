@@ -95,7 +95,7 @@
     transition: all 0.5s 0.5s; }
     .bio-container .left h1 {
       color: #fecea8;
-      font-size: 120px;
+      font-size: 6.25vw;
       font-family: 'Montserrat', sans-serif;
       font-weight: 100;
       margin-left: 20px;
