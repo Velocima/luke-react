@@ -5,6 +5,7 @@ import { Landing } from '../landing/Landing'
 import { Bio } from '../Bio/Bio'
 import { Projects } from '../Projects/Projects'
 import { Contact } from '../Contact/Contact';
+import { Teaching } from '../Teaching/Teaching';
 
 export class App extends React.Component {
     constructor(props) {
@@ -32,6 +33,8 @@ export class App extends React.Component {
                 return <Bio showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
             case 2:
                 return <Projects showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
+            case 3:
+                return <Teaching showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
             case 4:
                 return <Contact showNav={this.state.navBarState} toNextPage={this.state.pageIsRendering}/>
             default: 
