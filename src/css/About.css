@@ -58,7 +58,8 @@
 
 .invisible {
   opacity: 0;
-  cursor: default; }
+  cursor: default;
+  pointer-events: none; }
 
 .right-closed {
   width: 0 !important; }
@@ -73,19 +74,19 @@
   transform: translateX(0);
   opacity: 1; }
 
-.bio-container {
+.about-container {
   width: 100vw;
   height: 100vh;
   background-color: #2a363b;
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
-  .bio-container .overflow-container {
+  .about-container .overflow-container {
     overflow: hidden; }
-  .bio-container .left, .bio-container .right {
+  .about-container .left, .about-container .right {
     height: 100%;
     transition: all 0.7s ease-in; }
-  .bio-container .left {
+  .about-container .left {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -93,7 +94,7 @@
     justify-content: center;
     animation: slideOut30 1.8s backwards;
     transition: all 0.5s 0.5s; }
-    .bio-container .left h1 {
+    .about-container .left h1 {
       color: #fecea8;
       font-size: 6.25vw;
       font-family: 'Montserrat', sans-serif;
@@ -101,7 +102,7 @@
       margin-left: 20px;
       animation: fallIn 1s 1.4s backwards;
       transition: all 0.7s 0.3s; }
-  .bio-container .right {
+  .about-container .right {
     width: 70%;
     display: flex;
     align-items: center;
@@ -109,7 +110,7 @@
     background-color: #2a363b;
     animation: slideIn70 0.9s 0.9s backwards;
     transition: all 0.5s 0.5s; }
-    .bio-container .right p {
+    .about-container .right p {
       max-width: 50vw;
       max-height: 70vh;
       overflow-y: auto;
@@ -120,7 +121,7 @@
       margin-left: 30px;
       animation: fallIn 1s 2.2s backwards;
       transition: all 0.7s; }
-  .bio-container .left-out {
+  .about-container .left-out {
     width: 0%; }
-  .bio-container .right-out {
+  .about-container .right-out {
     width: 100%; }

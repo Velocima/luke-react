@@ -27,6 +27,10 @@ nav {
         text-align: center;
         transition: all 0.7s;
         cursor: pointer;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
     }
     h3:hover {
         background-color: $color-3;

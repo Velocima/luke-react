@@ -58,7 +58,8 @@
 
 .invisible {
   opacity: 0;
-  cursor: default; }
+  cursor: default;
+  pointer-events: none; }
 
 .right-closed {
   width: 0 !important; }
@@ -98,5 +99,8 @@ nav {
     text-align: center;
     transition: all 0.7s;
     cursor: pointer; }
+    nav h3 a {
+      text-decoration: none;
+      color: inherit; }
   nav h3:hover {
     background-color: #ff847c; }

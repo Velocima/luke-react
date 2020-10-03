@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../css/Bio.css';
+import '../../css/About.css';
 
 
-export class Bio extends React.Component {
+export class About extends React.Component {
     render () {
         return (
-            <div className="bio-container">
+            <div className="about-container">
                 <div className={this.props.toNextPage ? "left left-out" : "left"}>
                     <div className="overflow-container">
                         <h1 className={this.props.toNextPage ? "drop-down" : ""}>About</h1>

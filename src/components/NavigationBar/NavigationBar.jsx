@@ -1,41 +1,31 @@
 import React from 'react';
+import { DelayLink } from '../DelayLink/DelayLink';
 import '../../css/NavigationBar.css';
+
 export class NavBar extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(e) {
-        switch (e.target.innerHTML) {
-            case 'About': 
-                this.props.onNewPage[0](1);
-                this.props.onNewPage[1]();
-                break;
-            case 'Projects': 
-                this.props.onNewPage[0](2);
-                this.props.onNewPage[1]();
-                break;
-            case 'Teaching': 
-                this.props.onNewPage[0](3);
-                this.props.onNewPage[1]();
-                break;
-            case 'Contact': 
-                this.props.onNewPage[0](4);
-                this.props.onNewPage[1]();
-                break;
-            default: 
-                return;
-        }
+    handleClick() {
+        this.props.onNavItemClick.toggleNav();
+        this.props.onNavItemClick.updatePage();
     }
 
     render () {
         return (
             <nav className={this.props.showNav ? "active" : ""}>
-                <h3 onClick={this.handleClick}>About</h3>
-                <h3 onClick={this.handleClick}>Projects</h3>
-                <h3 onClick={this.handleClick}>Teaching</h3>
-                <h3 onClick={this.handleClick}>Contact</h3>
+                {this.props.pages.map(page => {
+                    return <h3 key={page} >
+                        <DelayLink 
+                            delay={1000} 
+                            onDelayStart={this.handleClick}
+                            to={`/${page.toLowerCase()}`}>
+                            {page}
+                        </DelayLink>
+                    </h3>
+                })}
             </nav>
         )
     }
