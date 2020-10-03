@@ -93,7 +93,7 @@ export class Projects extends React.Component {
                         </div>
                     </ul>
                     <div className="overflow-container">
-                        <iframe className={this.props.toNextPage ? "iframe-out" : ""} src={this.state.videoSrc} title={this.state.videoTitle} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe className={this.props.toNextPage ? "iframe-out" : ""} src={this.state.videoSrc} title={this.state.videoTitle} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen=""></iframe>
                     </div>
                 </div>
             </div>
