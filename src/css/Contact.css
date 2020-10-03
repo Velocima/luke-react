@@ -128,8 +128,8 @@
           .contact-container .right form .overflow-container label input, .contact-container .right form .overflow-container label textarea {
             font: inherit;
             width: 30vw;
-            background-color: #ff847c;
-            color: #fecea8;
+            background-color: #fdefef;
+            color: #2a363b;
             transition: all 0.4s;
             padding: 10px;
             border-radius: 5px; }
@@ -137,10 +137,10 @@
             resize: none;
             height: 10vh; }
           .contact-container .right form .overflow-container label input:focus, .contact-container .right form .overflow-container label textarea:focus {
-            background-color: #e84a5f;
+            background-color: #fffeeb;
             outline: none; }
       .contact-container .right form .submit-button {
-        background-color: #ff847c;
+        background-color: #e84a5f;
         color: #fecea8;
         font-size: 22px;
         font-family: 'Montserrat', sans-serif;
@@ -152,7 +152,7 @@
         animation: fallIn 1s 2.2s backwards;
         transition: all 0.4s; }
       .contact-container .right form .submit-button:focus {
-        background-color: #e84a5f;
+        background-color: #ff847c;
         outline: none; }
   .contact-container .left-out {
     width: 0%; }

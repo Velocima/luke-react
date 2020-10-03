@@ -67,8 +67,8 @@
                     input, textarea {
                         font: inherit;
                         width: 30vw;
-                        background-color: $color-3;
-                        color: $color-4;
+                        background-color: $form-background;
+                        color: $color-1;
                         transition: all 0.4s;
                         padding: 10px;
                         border-radius: 5px;
@@ -78,13 +78,13 @@
                         height: 10vh;
                     }
                     input:focus, textarea:focus {
-                        background-color: $color-2;
+                        background-color: $form-background-focus;
                         outline: none;
                     }
                 }
             }
             .submit-button {
-                background-color: $color-3;
+                background-color: $color-2;
                 color: $color-4;
                 font-size: 22px;
                 font-family: 'Montserrat', sans-serif;
@@ -97,7 +97,7 @@
                 transition: all 0.4s;
             }
             .submit-button:focus {
-                background-color: $color-2;
+                background-color: $color-3;
                 outline: none;
             }
         }

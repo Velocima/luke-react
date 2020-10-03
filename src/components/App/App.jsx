@@ -34,6 +34,7 @@ export class App extends React.Component {
     updatePage() {
         this.setState({
             pageIsRendering: true,
+            navBarState: false,
         });
         setTimeout(() => this.setState({
             pageIsRendering: false
