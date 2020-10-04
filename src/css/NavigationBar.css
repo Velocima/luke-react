@@ -44,6 +44,14 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes imgMediaDropIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
 .drop-down {
   transform: translateY(100%); }
 
@@ -85,7 +93,7 @@ nav {
   width: 50vw;
   height: 100vh;
   background-color: #e84a5f;
-  transform: translateX(50vw);
+  transform: translateX(100%);
   opacity: 0;
   transition: all 1s ease-out; }
   nav h3 {
@@ -104,3 +112,7 @@ nav {
       color: inherit; }
   nav h3:hover {
     background-color: #ff847c; }
+
+@media only screen and (max-width: 800px) {
+  nav {
+    width: 100vw; } }

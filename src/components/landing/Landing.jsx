@@ -7,6 +7,7 @@ export class Landing extends React.Component {
         return (
             <div className="landing-container">
                 <div className={this.props.showNav  || this.props.toNextPage ? "left left-open" : "left"}>
+                    <div className="spacer"></div>
                     <div className="overflow-container">
                         <h1 className={this.props.toNextPage ? "drop-down" : ""}>Luke Hartley</h1>
                     </div>
@@ -15,14 +16,16 @@ export class Landing extends React.Component {
                     </div>
                 </div>
                 <div className={this.props.showNav || this.props.toNextPage ? "right right-closed" : "right"}>
-                    <img 
-                        className={
-                            this.props.showNav ? "opacity-zero" : 
-                            this.props.toNextPage ? "hide-img" : 
-                            ""
-                        } 
-                        src={require("../../pictures/image-5.png")} 
-                        alt=""/>
+                    <div className="img-overflow-container">
+                        <img 
+                            className={
+                                this.props.showNav ? "opacity-zero" : 
+                                this.props.toNextPage ? "hide-img" : 
+                                ""
+                            } 
+                            src={require("../../pictures/image-5.png")} 
+                            alt=""/>
+                    </div>
                 </div>
             </div>
         )

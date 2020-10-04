@@ -13,7 +13,7 @@ nav {
     width: 50vw;
     height: 100vh;
     background-color: $color-2;
-    transform: translateX(50vw);
+    transform: translateX(100%);
     opacity: 0;
     transition: all 1s ease-out;
     h3 {
@@ -37,3 +37,8 @@ nav {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    nav {
+        width: 100vw;
+    }
+  }

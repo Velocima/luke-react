@@ -68,4 +68,44 @@
             display: none;
         }
     }
+    
+    @media only screen and (max-width: 800px) {
+        .left {
+            justify-content: start;
+            animation: slideOut70 1s 0.5s backwards;
+            align-items: center;
+            .spacer {
+                height: 15vh;
+            }
+            h1 {
+                margin: 0;
+                font-size: 9vw;
+                animation: fallIn 1s 1.5s backwards;
+            }
+            h3 {
+                margin: 0;
+                font-size: 4vw;
+                animation: fallIn 1s 2s backwards;
+            }
+        }
+        .right {
+            animation: slideIn30 1s 0.5s backwards;
+            .img-overflow-container {
+                position: fixed;
+                left: 5vw;
+                bottom: 18vh;
+                width: 60vw;
+                height: 60vw;
+                overflow: hidden;
+                img {
+                    position: relative;
+                    top:0;
+                    right:0;
+                    width: 60vw;
+                    height: 60vw;
+                    animation: imgMediaDropIn 1s 2.5s backwards;
+                }
+            }
+        }
+    }
 }

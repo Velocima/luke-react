@@ -44,6 +44,14 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes imgMediaDropIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
 .drop-down {
   transform: translateY(100%); }
 
