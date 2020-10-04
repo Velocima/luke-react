@@ -21,8 +21,9 @@ nav {
         font-family: 'Montserrat', sans-serif;
         font-size: 40px;
         font-weight: 300;
+        text-align: center;
         padding: 20px;
-        width: 30%;
+        min-width: 30%;
         border-radius: 5px;
         text-align: center;
         transition: all 0.7s;
@@ -40,5 +41,8 @@ nav {
 @media only screen and (max-width: 800px) {
     nav {
         width: 100vw;
+        h3 {
+            padding: 10px;
+        }
     }
   }

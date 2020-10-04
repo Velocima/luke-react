@@ -6,8 +6,8 @@
     overflow-x: hidden;
     .fas {
         position: fixed;
-        top: 50px;
-        left: 50px;
+        top: 6vw;
+        left: 6vw;
         padding: 10px;
         font-size: 30px;
         width: 36px;
@@ -27,8 +27,8 @@
         border-radius: 5px;
         z-index: 500;
         position: fixed;
-        top: 50px;
-        right: 50px;
+        top: 6vw;
+        right: 6vw;
         display: flex;
         flex-direction: column;
         transition: all 0.7s;
