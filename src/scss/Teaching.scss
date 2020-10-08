@@ -68,6 +68,22 @@
     .right-out {
         width: 100%;
     }
+    @media only screen and (max-width:800px) {
+        .left {
+            align-items: center;
+            h1 {
+                margin: 0;
+                font-size: 8vh;
+                letter-spacing: 0;
+                text-transform: uppercase;
+                text-align: center;
+                span {
+                    display: block;
+                    margin: -1.5vh 0;
+                }
+            }
+        }
+    }
 
 }
 

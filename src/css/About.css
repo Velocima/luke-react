@@ -149,4 +149,10 @@
       justify-content: center; }
       .about-container .right p {
         margin-left: 0;
-        padding: 15px; } }
+        padding: 15px;
+        font-size: 16px;
+        border: solid 2px #5b6468;
+        border-radius: 5px; } }
+  @media only screen and (max-width: 500px) {
+    .about-container .right p {
+      font-size: 14px; } }

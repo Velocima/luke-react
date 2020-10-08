@@ -113,28 +113,33 @@
   .project-container .right {
     width: 70%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: #2a363b;
     animation: slideIn70 0.9s 0.9s backwards;
     transition: all 0.5s 0.5s; }
     .project-container .right ul {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: space-evenly;
       flex-wrap: wrap;
-      max-width: 80%; }
+      width: 50vw;
+      max-height: 30vh;
+      border: 2px solid #5b6468;
+      border-radius: 5px;
+      overflow: auto; }
       .project-container .right ul li {
         color: #fecea8;
         font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         list-style: none;
-        max-width: 200px;
-        padding: 15px;
-        margin: 20px 30px;
+        background-color: #5b6468;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
         border-radius: 5px; }
       .project-container .right ul li:hover {
         background-color: #ff847c; }
@@ -172,6 +177,8 @@
     .project-container .right iframe {
       height: 28vw;
       width: 50vw;
+      margin-top: 30px;
+      border-radius: 5px;
       animation: liFallIn 1s 2.5s backwards;
       transition: all 0.5s; }
     .project-container .right .iframe-out {
@@ -180,3 +187,15 @@
     width: 0%; }
   .project-container .right-out {
     width: 100%; }
+  @media only screen and (max-width: 800px) {
+    .project-container .left {
+      align-items: center; }
+      .project-container .left h1 {
+        margin: 0;
+        font-size: 8vh;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        text-align: center; }
+        .project-container .left h1 span {
+          display: block;
+          margin: -1.5vh 0; } }

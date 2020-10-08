@@ -8,7 +8,7 @@ export class Teaching extends React.Component {
             <div className="teaching-container">
                 <div className={this.props.toNextPage ? "left left-out" : "left"}>
                     <div className="overflow-container">
-                        <h1 className={this.props.toNextPage ? "drop-down" : ""}>Teaching</h1>
+                        <h1 className={this.props.toNextPage ? "drop-down" : ""}>{"Teaching".split("").map((letter,i) => <span key={i}>{letter}</span>)}</h1>
                     </div>
                 </div>
                 <div className={this.props.toNextPage ? "right right-out" : "right"}>

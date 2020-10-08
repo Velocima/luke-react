@@ -6,8 +6,8 @@
     overflow-x: hidden;
     .fas {
         position: fixed;
-        top: 6vw;
-        left: 6vw;
+        top: 40px;
+        left: 40px;
         padding: 10px;
         font-size: 30px;
         width: 36px;
@@ -27,8 +27,8 @@
         border-radius: 5px;
         z-index: 500;
         position: fixed;
-        top: 6vw;
-        right: 6vw;
+        top: 40px;
+        right: 40px;
         display: flex;
         flex-direction: column;
         transition: all 0.7s;
@@ -45,5 +45,15 @@
     }
     .burger:hover {
         background-color: $color-3;
-    } 
+    }
+    @media only screen and (max-width: 800px) {
+        .burger{
+            top: 6vw;
+            right: 6vw;
+        }
+        .fas {
+            top: 6vw;
+            left: 6vw;
+        }
+    }
 }
