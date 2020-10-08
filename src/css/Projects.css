@@ -126,9 +126,7 @@
       align-items: space-evenly;
       flex-wrap: wrap;
       width: 50vw;
-      max-height: 30vh;
-      border: 2px solid #5b6468;
-      border-radius: 5px;
+      max-height: 40vh;
       overflow: auto; }
       .project-container .right ul li {
         color: #fecea8;
@@ -139,7 +137,7 @@
         background-color: #5b6468;
         width: 200px;
         padding: 10px;
-        margin: 10px;
+        margin-top: 10px;
         border-radius: 5px; }
       .project-container .right ul li:hover {
         background-color: #ff847c; }
@@ -187,6 +185,15 @@
     width: 0%; }
   .project-container .right-out {
     width: 100%; }
+  @media only screen and (max-width: 950px) {
+    .project-container .right ul {
+      width: 60vw; }
+      .project-container .right ul li {
+        font-size: 16px;
+        width: 180px; }
+    .project-container .right iframe {
+      width: 60vw;
+      height: 33vh; } }
   @media only screen and (max-width: 800px) {
     .project-container .left {
       align-items: center; }
@@ -199,3 +206,7 @@
         .project-container .left h1 span {
           display: block;
           margin: -1.5vh 0; } }
+  @media only screen and (max-width: 700px) {
+    .project-container .right ul li {
+      font-size: 14px;
+      width: 150px; } }

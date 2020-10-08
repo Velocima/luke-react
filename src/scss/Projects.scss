@@ -56,9 +56,7 @@
             align-items: space-evenly;
             flex-wrap: wrap;
             width: 50vw;
-            max-height: 30vh;
-            border: 2px solid $box;
-            border-radius: 5px;
+            max-height: 40vh;
             overflow: auto;
             li {
                 color: $color-4;
@@ -69,7 +67,7 @@
                 background-color: $box;
                 width: 200px;
                 padding: 10px;
-                margin: 10px;
+                margin-top: 10px;
                 border-radius: 5px;
             }
             li:hover {
@@ -144,6 +142,22 @@
         width: 100%;
     }
     
+    @media only screen and (max-width:950px) {
+        .right {
+            ul {
+                width: 60vw;
+                li {
+                    font-size: 16px;
+                    width: 180px;
+                }
+            }
+            iframe {
+                width: 60vw;
+                height: 33vh;
+            }
+        }
+    }
+
     @media only screen and (max-width:800px) {
         .left {
             align-items: center;
@@ -156,6 +170,16 @@
                 span {
                     display: block;
                     margin: -1.5vh 0;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:700px) {
+        .right {
+            ul {
+                li {
+                    font-size: 14px;
+                    width: 150px;
                 }
             }
         }
